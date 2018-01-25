@@ -98,7 +98,7 @@ public class Main {
 		System.out.println(singAddSame(6));
 	}
 
-	private static String singAddSame(int i) {
+	public static String singAddSame(int i) {
 		switch (i) {
 		case 2:
 			return "　今幸あれ";
