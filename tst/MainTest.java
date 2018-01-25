@@ -33,7 +33,6 @@ public class MainTest {
 				"音速超えゆく時代の　若人われら", "星めぐり逢う　大空に", "生きる歓び　ともに",
 				"航空保安大学校\n");
         assertEquals(expected, actual);
-
 	}
 
 }
