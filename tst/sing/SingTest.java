@@ -3,7 +3,6 @@ package sing;
 import static org.junit.Assert.*;
 
 import java.io.PrintStream;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,7 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class SingTest {
-	final List<String> actual = new ArrayList<String>();
+	String actual = "";
 	PrintStream fakePrintStream;
 	List<String> expected = Arrays.asList(
 			"青き海原　はるかに望み",
@@ -40,7 +39,7 @@ public class SingTest {
 		fakePrintStream = new PrintStream("ファイル名はここではどうでもいい") {
 			@Override
 			public void println(String str) {
-				actual.add(str);
+				actual = str;
 			}
 		};
 	}
